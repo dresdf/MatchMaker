@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchMaker", "MatchMaker.csproj", "{EAFE6EA5-506E-430F-A008-C49E2B8F1806}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAFE6EA5-506E-430F-A008-C49E2B8F1806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFE6EA5-506E-430F-A008-C49E2B8F1806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFE6EA5-506E-430F-A008-C49E2B8F1806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFE6EA5-506E-430F-A008-C49E2B8F1806}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D23B53F-6F59-4DCC-A828-0EB43B7587D0}
+	EndGlobalSection
+EndGlobal
