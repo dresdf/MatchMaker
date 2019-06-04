@@ -48,21 +48,31 @@ namespace MatchMaker.Controllers
             tmp.AddRange(model);
             foreach (Participant p in model)
             {
-                Random rand = new Random();
-                int index = rand.Next(0, tmp.Count - 1);
+                int count = tmp.Count;
+                int index = new Random().Next(0, count);
 
                 while (p.Name.Equals(tmp[index].Name))
                 {
-                    index = rand.Next(0, tmp.Count - 1);
+                    index = new Random().Next(0, count);
                 }
-
-
                 p.Match = tmp[index].Name;
                 tmp.RemoveAt(index);
             }
 
             WriteJson(model);
 
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ClearList()
+        {
+            string path = env.WebRootPath + "/json/list.json";
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(path);
+                FileStream fs = new FileStream(path, FileMode.Create);
+                fs.Close();
+            }
             return RedirectToAction("Index");
         }
         public IActionResult Privacy()
